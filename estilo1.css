@@ -121,4 +121,8 @@ cursor:pointer;
     .nav-menu_visible{
     left:0;
     }
+.nav-toggle:focus:not(:focus-visible){
+    outline: none;
 }
+}
+
