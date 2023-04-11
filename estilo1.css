@@ -126,3 +126,98 @@ cursor:pointer;
 }
 }
 
+/* Estilo de la parte central de la pantalla de inicio */
+
+.main{
+    margin: 0;
+    background-color: #112034;
+    color: #fff;
+}
+
+.contenedor-situacion-parrafos{
+    background-color: #112034;
+    /* display:grid; */
+    margin-block-start: 50%;
+    width: 800px;
+    margin:0 25%;
+    text-align: justify;
+}
+
+.contenedor-parrafos{
+    font-size:small;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);   
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-content: center; */
+    grid-template-areas:    "marcador-situacion texto-situacion texto-situacion"                            
+                            "parrafo1           parrafo1        parrafo1"
+                            "parrafo2           parrafo2        parrafo2"
+                            "parrafo3           parrafo3        parrafo3"
+                            "proyect            proyect         cv"   ;
+    
+}
+
+.marcador-situacion {
+    grid-area:marcador-situacion;
+    background-color:white;
+    /* min-width: 10px; */
+    /* max-width: 100px; */
+}
+
+.texto-situacion {   
+    grid-area: texto-situacion;
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+}
+.parrafo2 {
+    grid-area: parrafo2;
+}
+
+.parrafo3 {
+    grid-area: parrafo3;
+}
+.proyect {
+    grid-area: proyect;
+}
+.cv{
+    grid-area: cv;   
+}
+
+
+
+ .Titulo, .pieTitulo{
+    display:flex;
+    justify-content: center;    
+    margin:15px;
+}
+.foto-centro{    
+    background-color:#112034;
+    text-align: center;
+    
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.piedepagina{
+    background-color:#83c5f7
+}
