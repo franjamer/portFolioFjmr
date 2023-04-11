@@ -187,9 +187,6 @@ cursor:pointer;
 .cv{
     grid-area: cv;   
 }
-
-
-
  .Titulo, .pieTitulo{
     display:flex;
     justify-content: center;    
