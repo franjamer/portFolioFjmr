@@ -95,7 +95,7 @@ cursor:pointer;
         position: fixed;      
         left: 0;
         top:60px;
-        width:fit-content;
+        width:100%;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
@@ -124,6 +124,9 @@ cursor:pointer;
     }
 .nav-toggle:focus:not(:focus-visible){
     outline: none;
+}
+.supercontenedor{
+    margin-top:300px;
 }
 }
 
