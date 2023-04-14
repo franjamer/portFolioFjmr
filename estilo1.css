@@ -128,6 +128,9 @@ cursor:pointer;
 .supercontenedor{
     margin-top:300px;
 }
+.contenedor2{
+    height: fit-content;
+}
 }
 
 /* Estilo del cuerpo de la pantalla de inicio  un contenedor global, y tres subcontenedores parciales*/
