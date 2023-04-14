@@ -167,26 +167,22 @@ cursor:pointer;
 }
 /* estilo y colocación de la parte inferior del cuerpo de la página */
 .contenedor3 {    
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display:grid;
+    grid-template-columns:20% 60% 20%;
+    grid-template-rows: 5% repeat(3,25%) 20%;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color:#004880 ;    
+    grid-template-areas: 
+    "m1 s1 ."
+    "p1 p1 p1"
+    "p2 p2 p2"
+    "p3 p3 p3"
+    "b1 . b2";
 }
+ 
 
-.solo-situacion , .solo-parrafos , .botones   {
-    background-color: #004880;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;    
-}
-
-.contenedor3 > .botones {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-}
 
 
 
