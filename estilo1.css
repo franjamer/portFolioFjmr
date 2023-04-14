@@ -139,7 +139,7 @@ cursor:pointer;
     display:grid;
     grid-gap: 5px;
     grid-template-columns: 100%;
-    grid-template-row: 1fr 3fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
 }
 
 
@@ -154,7 +154,7 @@ cursor:pointer;
     align-items: center;
     background-color: #004880;
     flex-direction: column;
-    align-items: center;   
+      
 }
 
 .tituloCab> .Titulo , .pieTitulo{
@@ -169,18 +169,21 @@ cursor:pointer;
 
 
 .contenedor2{
-    width: 100%;
-    height:300px;
     display:grid;
+    width: 100%;
+    height:300px;    
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 20% 60% 20%;
     grid-template-areas: ". . ." ". foto ." ". . .";
+    
 }
 .foto-centro {
     grid-area: foto;
     align-items:center;
     justify-self: center;
     align-self: center;
+    width: fit-content;
+    height:fit-content;
 }
 
 
@@ -196,7 +199,7 @@ cursor:pointer;
     display:flex;  
     flex-direction: column; 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
 }
 
@@ -261,6 +264,9 @@ ion-icon{
     justify-content: center;
     align-items: center;
 }
+.botones{
+    justify-self: stretch;
+}
 
 
 
@@ -296,24 +302,25 @@ ion-icon{
 
 
 
-
-/* .cv .proyect{
+.contenedor-botones{
     display: grid;
-    grid-template-rows: 50px 50px;
-    grid-template-areas: "1 2";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "1 . ." ". . 2";
 }
 .proyect{
    grid-area: 1;
     background-color: aqua;
-    width:200px;    
+    width:50%;    
     padding: 10px;
     
 }
 
 .cv{
-   width:100px;
+    background-color: chartreuse;
+   width:50%;
     grid-area:2;
-}  */
+}
 
 
 
