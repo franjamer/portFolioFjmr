@@ -1,0 +1,140 @@
+*{
+margin=0;
+padding: 0;
+}
+.supercontenedor{
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: ". c1 ." ". c2 ." ". c3 .";
+}
+.contenedor1{
+    width: 50%;
+    
+    border:2px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    grid-area: c1;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;/*alineacion del bloque con respecto a su contenedorsuperior*/
+    align-self: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.contenedor2{
+    width: 50%;
+    border:2px;
+    background-color: rgb(228, 98, 152);
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    grid-area: c2;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% 60%,20%;
+    grid-template-areas:". foto ." ". foto ." "pos1 pos2 pos3";
+    justify-self: center;
+}
+ .contenedor2-foto-centro{    
+    padding: 1px;
+    border:2px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    height: fit-content;
+    border-radius: 10px;
+    grid-area: foto;    
+    justify-self: center;
+}
+.foto-princ{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.contenedor2-solo-situacion{    
+    display:grid;
+    grid-template-areas: "s1 s2";
+    /* display:flex; */
+    /* flex-direction: row;
+    justify-content: flex-start; */
+    grid-area: pos2;
+}
+
+.icono > ion-icon{
+    grid-area: s1;
+    justify-self: left;
+}
+
+.solo-situacion{
+    grid-area: s2;
+justify-self: stretch;
+}
+
+
+.contenedor3{
+    border:2px;
+    background-color: rgb(208, 127, 255);
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    grid-area: c3;
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(4,1fr) ;
+    grid-area: ". p1 ." ". p2 ." ". p3 ." ". btn .";
+    align-items: center;
+    gap: 1px;   
+    width: 50%;/*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
+    justify-self: center;/*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
+}
+.foto-princ {
+    mar
+    width: 90%;
+    max-width: 110%;
+    height: 80%;
+    max-height: 100%;
+}
+
+.marco-parrafos{
+    width: 100%;    
+}
+.text{
+    /* width: 33%; */
+    /* grid-column:  */
+    border:2px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;    
+}
+
+
+.marco-botones {
+    width: 100%;
+    background-color: chocolate;
+    border:2px;
+    border-style: solid;
+    border-color: black;
+    justify-self:stretch;
+    border-radius: 20px;
+}
+
+.marco-botones > .botones{
+    /* justify-items: space-around; */
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+
+
+
+
