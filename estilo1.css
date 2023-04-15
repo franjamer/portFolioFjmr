@@ -136,6 +136,8 @@ cursor:pointer;
 /* Estilo del cuerpo de la pantalla de inicio  un contenedor global, y tres subcontenedores parciales*/
 
 .supercontenedor{
+    /*mirar a ver la posibilidad de hacer un translate vertical cuando cambia a formato movil*/
+    margin-top: 90px;
     display:grid;
     grid-template-columns: 3;
     grid-template-rows: 3;
