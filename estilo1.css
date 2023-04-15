@@ -142,7 +142,6 @@ cursor:pointer;
     grid-template-columns: 3;
     grid-template-rows: 3;
     grid-template-areas: ". c1 ." ". c2 ." ". c3 .";
-
 }
 
 
@@ -152,13 +151,12 @@ cursor:pointer;
 
 
 .contenedor1{
-    width: 50%;
-    
-    border:2px;
-    background-color: aquamarine;
-    border-style: solid;
+    width: 50%;    
+    /* border:2px; */
+    background-color: #004880;
+    /* border-style: solid;
     border-color: black;
-    border-radius: 10px;
+    border-radius: 10px; */
     grid-area: c1;
     display:flex;
     flex-direction: column;
@@ -180,12 +178,13 @@ cursor:pointer;
 
 
  .contenedor2{
+
     width: 50%;
-    border:2px;
-    background-color: rgb(228, 98, 152);
-    border-style: solid;
+    /* border:2px; */
+    background-color: #004880;
+    /* border-style: solid;
     border-color: black;
-    border-radius: 10px;
+    border-radius: 10px; */
     grid-area: c2;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -196,11 +195,11 @@ cursor:pointer;
 .contenedor2-foto-centro {
     padding: 1px;
     border:2px;
-    background-color: white;
-    border-style: solid;
+    background-color: #004880;
+    /* border-style: solid;
     border-color: black;
     height: fit-content;
-    border-radius: 10px;
+    border-radius: 10px; */
     grid-area: foto;    
     justify-self: center;
  } 
@@ -210,6 +209,7 @@ cursor:pointer;
     width: fit-content;
     height: fit-content;
     display: flex;
+    padding: 15px;
 }
 
 .contenedor2-solo-situacion{    
@@ -232,11 +232,12 @@ justify-self: stretch;
 
 
 .contenedor3{
+    
     border:2px;
-    background-color: rgb(208, 127, 255);
-    border-style: solid;
+    background-color: #004880;
+    /* border-style: solid;
     border-color: black;
-    border-radius: 10px;
+    border-radius: 10px; */
     grid-area: c3;
     display:flex;
     flex-direction: column;
@@ -249,7 +250,7 @@ justify-self: stretch;
     justify-self: center;/*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
 }
 .foto-princ {
-    margin: auto;
+    margin-top: 50px;
     width: 90%;
     max-width: 110%;
     height: 80%;
@@ -257,7 +258,7 @@ justify-self: stretch;
 }
 
 .marco-parrafos{
-    width: 100%;    
+    width: 50%;    
 }
 
 
@@ -289,16 +290,18 @@ ion-icon{
     width: fit-content;
     height: fit-content;
     /* text-align:center; */    
-    border-radius: 15px;    
+    /* border-radius: 15px;     */
 }
 .text{
     /* width: 33%; */
     /* grid-column:  */
-    border:2px;
-    background-color: aquamarine;
-    border-style: solid;
+    padding: 5px;
+    color:white;
+    /* border:2px; */
+    background-color: #004880;
+    /* border-style: solid;
     border-color: black;
-    border-radius: 10px;
+    border-radius: 10px; */
     justify-self: center;
     justify-content: center;
     justify-items: center;
@@ -306,7 +309,7 @@ ion-icon{
 }
 .contenedor-parrafos-situacion{
     display:flex;
-    background-color: #83c5f7;
+    background-color: #004880;
     width:fit-content;
     height: fit-content;
     border-radius: 15px;
