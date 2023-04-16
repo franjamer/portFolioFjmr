@@ -127,10 +127,14 @@ cursor:pointer;
 }
 .supercontenedor{
     margin-top:300px;
+    border-top: 100px;
+    border-color: #004880;
+    height: calc(100% + 30%);
 }
 .contenedor2{
     height: fit-content;
 }
+
 }
 
 /* Estilo del cuerpo de la pantalla de inicio  un contenedor global, y tres subcontenedores parciales*/
@@ -144,19 +148,11 @@ cursor:pointer;
     grid-template-areas: ". c1 ." ". c2 ." ". c3 .";
 }
 
-
-
 /* estilo y colocación de la parte superior del cuerpo de la página */
 
-
-
 .contenedor1{
-    width: 50%;    
-    /* border:2px; */
-    background-color: #004880;
-    /* border-style: solid;
-    border-color: black;
-    border-radius: 10px; */
+    width: 50%;        
+    background-color: #004880;    
     grid-area: c1;
     display:flex;
     flex-direction: column;
@@ -172,19 +168,14 @@ cursor:pointer;
     align-items: center;
 }
 
-
 /* estilo y colocacion de la parte central del cuerpo de la página */
 
 
 
  .contenedor2{
-
     width: 50%;
     /* border:2px; */
-    background-color: #004880;
-    /* border-style: solid;
-    border-color: black;
-    border-radius: 10px; */
+    background-color: #004880;  
     grid-area: c2;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -192,14 +183,11 @@ cursor:pointer;
     grid-template-areas:". foto ." ". foto ." "pos1 pos2 pos3";
     justify-self: center;
 }
+
 .contenedor2-foto-centro {
     padding: 1px;
     border:2px;
-    background-color: #004880;
-    /* border-style: solid;
-    border-color: black;
-    height: fit-content;
-    border-radius: 10px; */
+    background-color: #004880;   
     grid-area: foto;    
     justify-self: center;
  } 
@@ -214,30 +202,26 @@ cursor:pointer;
 
 .contenedor2-solo-situacion{    
     display:grid;
-    grid-template-areas: "s1 s2";
-    /* display:flex; */
-    /* flex-direction: row;
-    justify-content: flex-start; */
+    grid-template-areas: "s1 s2";    
     grid-area: pos2;
 }
 .solo-situacion{
     grid-area: s2;
-justify-self: stretch;
+justify-items: left;
+}
+.icono, .texto-situacion {
+    display: inline;
+    font-style: oblique;   
+    width: fit-content;
+    height: fit-content;   
 }
 /*fin de lineas agregadas y comprobadas*/
 
-
 /* estilo y colocación de la parte inferior del cuerpo de la página */
 
-
-
-.contenedor3{
-    
+.contenedor3{    
     border:2px;
-    background-color: #004880;
-    /* border-style: solid;
-    border-color: black;
-    border-radius: 10px; */
+    background-color: #004880;    
     grid-area: c3;
     display:flex;
     flex-direction: column;
@@ -249,6 +233,7 @@ justify-self: stretch;
     width: 50%;/*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
     justify-self: center;/*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
 }
+
 .foto-princ {
     margin-top: 50px;
     width: 90%;
@@ -261,52 +246,29 @@ justify-self: stretch;
     width: 50%;    
 }
 
-
-
-
-ion-icon{
-   /* background-color: chartreuse; */
-   /* text-align: center; */
-   /* border-style: solid; */
-    /* border-color: aquamarine; */
-    /* border-radius: 15px; */
+ion-icon{   
     width: 30px;
     height: 30px;
-    font-size: x-large;
-
+    justify-self: end;
+    color:red;
 }
 
 .icono{
-    color:blue;
-    /* font-size: px; */
+    color:blue;   
 }
 
-.icono, .texto-situacion {
-    display: inline;
-    font-style: oblique;
-    /* padding: 10px; */
-    /* max-resolution: 10px; */
-    /* background-color: brown; */
-    width: fit-content;
-    height: fit-content;
-    /* text-align:center; */    
-    /* border-radius: 15px;     */
-}
+
+
 .text{
-    /* width: 33%; */
-    /* grid-column:  */
+   
     padding: 5px;
-    color:white;
-    /* border:2px; */
-    background-color: #004880;
-    /* border-style: solid;
-    border-color: black;
-    border-radius: 10px; */
-    justify-self: center;
+    color:white;    
+    background-color: #004880;  
     justify-content: center;
     justify-items: center;
     text-align: justify;    
 }
+
 .contenedor-parrafos-situacion{
     display:flex;
     background-color: #004880;
@@ -317,299 +279,67 @@ ion-icon{
     justify-content: center;
     align-items: center;
 }
+
 .botones{
-    justify-self: stretch;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.contenedor-botones{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100%;
-    grid-template-areas: "1 . ." ". . 2";
-}
-.proyect{
-   grid-area: 1;
-    background-color: aqua;
-    width:50%;    
-    padding: 10px;
-    
-}
-
-.cv{
-    background-color: chartreuse;
-   width:50%;
-    grid-area:2;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .main{
-    margin: 0;
-    background-color: #112034;
-    color: #fff;
-    display:grid;
-    grid-gap: 20px;
-    justify-content: space-around;
-    align-content: space-around;
-    justify-items: center;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .contenedor-parrafos{
-    position: relative;
-    
-    padding-left: 10%;
-    font-size:large;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);   
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas:    "marcador-situacion texto-situacion     .   "                            
-                            "parrafo1 parrafo1 parrafo1"
-                            "parrafo2 parrafo2 parrafo2"
-                            "parrafo3 parrafo3 parrafo3"
-                            "proyect      .    cv"   ;
-   
-    justify-items: end;
-    align-items: end;
-} */
-/* 
-.fondo-centro{
-    display: flex;
-    justify-content: center;
-    
-}
-.foto-centro{width: 50%;
-    text-align: center;
-}
-.marcador-situacion {
-    grid-area:marcador-situacion;
-    background-color:white;     
-}
-.ion-icon {
-    grid-area:marcador-situacion;
-    color: red;
-    justify-self: right;
-    align-self: flex-end;    
-  }
-.texto-situacion {   
-    grid-area: texto-situacion;
-    background-color: #112034;
-    width: 800px;
-    display: grid;  
-}
-.contenedor-situacion-parrafos {
-    /* text-align: justify; 
-    width: 60%;
-    align-content: center;
-    justify-content: center;
-}
-.texto{
-    justify-self: justify;
-    align-self: justify;
-}
-.parrafo1 {
-    grid-area: parrafo1;
-}
-.parrafo2 {
-    grid-area: parrafo2;
-
-}
-.parrafo3 {
-    grid-area: parrafo3;
-} */
-
-/* control de dimensiones de botones */
-/* .proyect {
-    grid-area: proyect;
-    align-self: stretch;
-    justify-self: stretch;
-    padding: 20px;
-}
-
-.cv{
-    grid-area: cv;   
-    align-self: stretch;
-    justify-self: stretch;
-    padding: 20px;
-}
- .Titulo, .pieTitulo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0769e9;
+    width: 50%;
     display:flex;
-    justify-content: center;    
-    padding-top: 20px;
-    margin:15px;
+    justify-content:space-between;
 }
-.foto-centro{    
-    width: 33%;
-    height: 44%;
-    background-color:#112034;    
-    justify-items: center;
+
+.proyectos{
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+.curriculum{
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+
+.piedepagina{ 
+    display: grid;
+    height: 100px;  
+    grid-template-rows: 50% 50%;
+    grid-template-columns:33% 33% repeat(4,1fr) ;
+    grid-template-areas: "f1" "f2";
     
-}  */
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.piedepagina{
-    background-color:#83c5f7
+    background-color:#7be765;
+    
+    width: 100%;
+    /* text-align: center; */
 }
+
+.primeraFila{
+    grid-area: f1;
+    grid-column:5/6 ;
+    background-color: darkgoldenrod;
+    height: fit-content;
+    width: fit-content;
+    /* background-color:#004880 ; */
+    /* justify-content: flex-end; */
+    
+}
+.returnTop {
+    grid-area: return-top;
+}
+
+.segundaFila{
+    grid-area: f2;
+    display:grid;
+    grid-template-areas: "cr . li gh ce";
+    background-color: coral;
+    height: fit-content;
+    width: fit-content;
+    height: 50%;
+   
+}
+.gh{
+grid-area: gh;
+}
+
