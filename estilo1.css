@@ -156,14 +156,15 @@ cursor:pointer;
     grid-area: c1;
     display:flex;
     flex-direction: column;
-    justify-self: center;/*alineacion del bloque con respecto a su contenedorsuperior*/
+    justify-self: center;/* alineacion del bloque con respecto a su contenedorsuperior */
+    
     align-self: center;
     align-items: center;
     text-align: justify;    
 }
 
 .tituloCab > .Titulo , .tituloCab > .pieTitulo{
-    font-size: x-small;
+    
     display:grid;
     align-items: center;
 }
@@ -190,6 +191,7 @@ cursor:pointer;
     background-color: #004880;   
     grid-area: foto;    
     justify-self: center;
+    
  } 
 /*lineas agregada y comprobadas*/
 
@@ -198,6 +200,7 @@ cursor:pointer;
     height: fit-content;
     display: flex;
     padding: 15px;
+    /* border-radius: 5px; */
 }
 
 .contenedor2-solo-situacion{    
@@ -230,7 +233,7 @@ justify-items: left;
     grid-area: ". p1 ." ". p2 ." ". p3 ." ". btn .";
     align-items: center;
     gap: 1px;   
-    width: 50%;/*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
+    width: 75%;/*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
     justify-self: center;/*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
 }
 
@@ -257,10 +260,9 @@ ion-icon{
     color:blue;   
 }
 
+/* encuadres de la parte inferior del contenedor3 */
 
-
-.text{
-   
+.text{   
     padding: 5px;
     color:white;    
     background-color: #004880;  
@@ -283,7 +285,7 @@ ion-icon{
 .botones{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #0769e9;
+    background-color:#004880;
     width: 50%;
     display:flex;
     justify-content:space-between;
@@ -303,43 +305,69 @@ ion-icon{
 
 
 .piedepagina{ 
-    display: grid;
-    height: 100px;  
-    grid-template-rows: 50% 50%;
-    grid-template-columns:33% 33% repeat(4,1fr) ;
-    grid-template-areas: "f1" "f2";
-    
-    background-color:#7be765;
-    
     width: 100%;
-    /* text-align: center; */
+    display: grid;
+    height: fit-content;         
+    background-color:#004880;
+    
+   
 }
 
 .primeraFila{
-    grid-area: f1;
-    grid-column:5/6 ;
-    background-color: darkgoldenrod;
-    height: fit-content;
-    width: fit-content;
-    /* background-color:#004880 ; */
-    /* justify-content: flex-end; */
-    
-}
-.returnTop {
-    grid-area: return-top;
+    background-color:#004880;
+    justify-self: end;
+    padding:5px;
 }
 
-.segundaFila{
-    grid-area: f2;
-    display:grid;
-    grid-template-areas: "cr . li gh ce";
-    background-color: coral;
-    height: fit-content;
-    width: fit-content;
-    height: 50%;
+
+
+.segundaFila{   
+    display:flex;    
+    /* grid-template-columns: 1% auto auto auto auto auto 2%;     */
+    background-color: coral;  
+    /* justify-content: right; */
+    justify-content: space-around;
+    width: 100%;
    
 }
+
+.returnTop {
+    padding-right: 15px;
+    width: 100%;
+    background-color: #490d41;
+    grid-area: "rT";   
+    /* justify-items: left; */
+    color: aliceblue;
+    
+}
+.rrss{
+    /* display:inline; */
+    background-color: darkgoldenrod;
+    width: 5%;
+
+    
+}
+.cr > .cr-text{
+    background-color: rgb(81, 11, 11);
+    grid-area: "cr";
+    width: 50%;
+
+    
+    /* justify-self: left; */
+}
 .gh{
-grid-area: gh;
+   
+    background-color: deeppink;
+    g
+}
+.li{
+   
+   grid-area: "li";
+   background-color: rgb(156, 97, 20);
+}
+.dc{
+    grid-area: "ce";
+    background-color: mediumvioletred;
+  
 }
 

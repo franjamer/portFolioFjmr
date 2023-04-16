@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <nav class="nav">                    
-        <a href="#" class="logo nav-link">logo</a>
+        <a href="#"  id="logo" class="logo nav-link">logo</a>
         <button class="nav-toggle" aria-label="Abrir Menú">
             <i class="fa fa-bars"></i>
         </button>            
@@ -37,7 +37,7 @@
     </header>
     <main class="main supercontenedor">
         <div class="contenedor1 titulo-cab">
-            <h2 class="Titulo">FRANCISCO JAVIER MENAYO RAMOS</h2>
+            <h2 class="Titulo" id="titulo">FRANCISCO JAVIER MENAYO RAMOS</h2>
             <h3 class="pieTitulo">Tecnico Superior Instalaciones Electrotécnicas</h3>
         </div>  
 
@@ -84,19 +84,29 @@
 
 </body>
 <footer class="piedepagina" >
-<section class="primeraFila">
+    <section class="primeraFila">
     <!-- <p>
         esta es la primera fila del pie de página
     </p> -->
-    <button class="returnTop">volver arriba</button>
-</section>
+    <div class="marco-boton">
+        <button class="returnTop" href="titulo">
+            Regresar Arriba
+        </button>
+    </div>
+    </section>
 
-<section class="segundaFila">
-    <p class="cr">@ 2023 FJMR</p>
-    <img src="img/logo-github.svg" alt="" class="gh">
-    <img src="img/logo-electron.svg" alt="" class="li">
-    <img src="img/logo-discord.svg" alt="" class="dc">
-</section>
+    <section class="segundaFila">
+        <area class="cr">
+            <p class="cr-text">
+                @2023 FJMR
+            </p>
+        <area/>
+        <area class="rrss">
+        <img class="img-rrss gh" href="#" src="img/logo-github.svg" width="25px" height="25px"  alt="logo-github">
+        <img class="img-rrss li" href="#" src="img/logo-electron.svg" width="25px" height="25px" alt="logo-linkedin" >
+        <img class="img-rrss dc" href="#" src="img/logo-discord.svg" width="25px" height="25px" alt="logo-discord" >
+        </area>
+    </section>
 </footer>
 </html>
 
