@@ -326,7 +326,7 @@ ion-icon{
     /* grid-template-columns: 1% auto auto auto auto auto 2%;     */
     background-color: coral;  
     /* justify-content: right; */
-    justify-content: space-around;
+    justify-content: left;
     width: 100%;
    
 }
@@ -350,15 +350,12 @@ ion-icon{
 .cr > .cr-text{
     background-color: rgb(81, 11, 11);
     grid-area: "cr";
-    width: 50%;
-
-    
-    /* justify-self: left; */
+    width: 50%;    
+    justify-self: left;
 }
 .gh{
-   
     background-color: deeppink;
-    g
+    grid-area: "gh";
 }
 .li{
    
