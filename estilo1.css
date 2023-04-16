@@ -322,59 +322,21 @@ ion-icon{
 
 
 .segundaFila{   
-    display:flex;    
-    /* grid-template-columns: 1% auto auto auto auto auto 2%;     */
-    background-color: coral;  
-    /* justify-content: right; */
-    justify-content: right;
-    width: 100%;
-   
+    display:flex;      
+    background-color: rgb(175, 145, 134);      
+    justify-content: space-around;
+    width: 100%;   
 }
 
 .returnTop {
     padding-right: 15px;
     width: 100%;
-    background-color: #490d41;
-    grid-area: "rT";   
-    /* justify-items: left; */
-    color: aliceblue;
-    
+    background-color: #490d41;      
+    color: aliceblue;    
 }
-.rrss{
-    /* display:inline; */
-    display: flex;
-    background-color: darkgoldenrod;
-    width: 5%;
-    justify-content: space-between;
-
-    
-}
-.cr > .cr-text{
-    background-color: rgb(81, 11, 11);
-    grid-area: "cr";
-    width: 50%;    
-    justify-self: left;
-}
-.gh{
-    background-color: deeppink;
-    grid-area: "gh";
-}
-.li{
+.img-rrss{
+    background-color: #d9dce0;
+   }
    
-   grid-area: "li";
-   background-color: rgb(156, 97, 20);
-}
-.dc{
-    grid-area: "ce";
-    background-color: mediumvioletred;
-}
-    .em{
-    background-color:mediumorchid
 
-    }
-   
-/* ion-icon {
-    font-size: 30px;
-    color:red;
-  } */
 
