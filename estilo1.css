@@ -326,7 +326,7 @@ ion-icon{
     /* grid-template-columns: 1% auto auto auto auto auto 2%;     */
     background-color: coral;  
     /* justify-content: right; */
-    justify-content: left;
+    justify-content: right;
     width: 100%;
    
 }
@@ -342,8 +342,10 @@ ion-icon{
 }
 .rrss{
     /* display:inline; */
+    display: flex;
     background-color: darkgoldenrod;
     width: 5%;
+    justify-content: space-between;
 
     
 }
@@ -365,6 +367,14 @@ ion-icon{
 .dc{
     grid-area: "ce";
     background-color: mediumvioletred;
-  
 }
+    .em{
+    background-color:mediumorchid
+
+    }
+   
+/* ion-icon {
+    font-size: 30px;
+    color:red;
+  } */
 
