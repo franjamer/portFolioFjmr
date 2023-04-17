@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+.supercontenedor{
+    display: flex;
+    align-items: center;    
+    /* justify-items: flex-start; */
+    flex-direction: column;    /*eje main vertical, aplica align...*/
+    background-color: coral;
+    width: 95%;
+}
+.contenedor1{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+
+.cuadricula{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-self: flex-start; */
+    width: 80%;
+}
+.tecno{
+    background-color: aliceblue;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    justify-items: flex-start;
+}
+
+.titulo{
+    background-color: blue;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(164, 60, 60);
+    width: 80%;
+    
+}
+.imagen-tecno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+.text-pie{
+    background-color: darkgoldenrod;
+}
+.parrafo{
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-items: end; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.descripcion-tecno{
+    background-color: brown;
+    width: 50%;
+    height: 50%;
+    display:flex;
+    /* flex-direction: column; */
+    /* justify-self: center; */
+    /* align-content: center; */
+}
+
+.marco-lista{
+    background-color: aqua;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.lista-tecno{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecno{
+
+}
