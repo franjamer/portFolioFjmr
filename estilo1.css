@@ -15,7 +15,6 @@ position: fixed;
 width: 100%;
 top: 0;
 left: 0;
-
 }
 .nav{
     display: flex;
@@ -24,10 +23,12 @@ left: 0;
     max-width: 992px;
     margin:0,auto;
 }
+
 .nav-link{
     color:white;
     text-decoration: none;   
 }
+
 .logo{
     font-size: 30px;
     font-weight: bold;
@@ -157,7 +158,6 @@ cursor:pointer;
     display:flex;
     flex-direction: column;
     justify-self: center;/* alineacion del bloque con respecto a su contenedorsuperior */
-    
     align-self: center;
     align-items: center;
     text-align: justify;    
@@ -170,9 +170,6 @@ cursor:pointer;
 }
 
 /* estilo y colocacion de la parte central del cuerpo de la página */
-
-
-
  .contenedor2{
     width: 50%;
     /* border:2px; */
@@ -184,14 +181,12 @@ cursor:pointer;
     grid-template-areas:". foto ." ". foto ." "pos1 pos2 pos3";
     justify-self: center;
 }
-
 .contenedor2-foto-centro {
     padding: 1px;
     border:2px;
     background-color: #004880;   
     grid-area: foto;    
     justify-self: center;
-    
  } 
 /*lineas agregada y comprobadas*/
 
@@ -208,10 +203,12 @@ cursor:pointer;
     grid-template-areas: "s1 s2";    
     grid-area: pos2;
 }
+
 .solo-situacion{
     grid-area: s2;
 justify-items: left;
 }
+
 .icono, .texto-situacion {
     display: inline;
     font-style: oblique;   
@@ -309,8 +306,6 @@ ion-icon{
     display: grid;
     height: fit-content;         
     background-color:#004880;
-    
-   
 }
 
 .primeraFila{
@@ -318,8 +313,6 @@ ion-icon{
     justify-self: end;
     padding:5px;
 }
-
-
 
 .segundaFila{   
     display:flex;      
@@ -337,6 +330,5 @@ ion-icon{
 .img-rrss{
     background-color: #d9dce0;
    }
+
    
-
-
