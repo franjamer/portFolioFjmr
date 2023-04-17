@@ -138,10 +138,12 @@ cursor:pointer;
 
 }
 
-/* Estilo del cuerpo de la pantalla de inicio  un contenedor global, y tres subcontenedores parciales*/
+/* Estilo del cuerpo de la pantalla de inicio  un contenedor global, 
+y tres subcontenedores parciales*/
 
 .supercontenedor{
-    /*mirar a ver la posibilidad de hacer un translate vertical cuando cambia a formato movil*/
+    /*mirar a ver la posibilidad de hacer un translate vertical 
+    cuando cambia a formato movil*/
     margin-top: 90px;
     display:grid;
     grid-template-columns: 3;
@@ -157,7 +159,8 @@ cursor:pointer;
     grid-area: c1;
     display:flex;
     flex-direction: column;
-    justify-self: center;/* alineacion del bloque con respecto a su contenedorsuperior */
+    /* alineacion del bloque con respecto a su contenedor superior */
+    justify-self: center;
     align-self: center;
     align-items: center;
     text-align: justify;    
@@ -188,14 +191,12 @@ cursor:pointer;
     grid-area: foto;    
     justify-self: center;
  } 
-/*lineas agregada y comprobadas*/
 
 .foto-princ{
     width: fit-content;
     height: fit-content;
     display: flex;
-    padding: 15px;
-    /* border-radius: 5px; */
+    padding: 15px;   
 }
 
 .contenedor2-solo-situacion{    
@@ -206,7 +207,7 @@ cursor:pointer;
 
 .solo-situacion{
     grid-area: s2;
-justify-items: left;
+    justify-items: left;
 }
 
 .icono, .texto-situacion {
@@ -215,7 +216,6 @@ justify-items: left;
     width: fit-content;
     height: fit-content;   
 }
-/*fin de lineas agregadas y comprobadas*/
 
 /* estilo y colocación de la parte inferior del cuerpo de la página */
 
@@ -229,9 +229,11 @@ justify-items: left;
     grid-template-rows: repeat(4,1fr) ;
     grid-area: ". p1 ." ". p2 ." ". p3 ." ". btn .";
     align-items: center;
-    gap: 1px;   
-    width: 75%;/*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
-    justify-self: center;/*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
+    gap: 1px;  
+     /*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
+    width: 75%;
+    /*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
+    justify-self: center;
 }
 
 .foto-princ {
@@ -327,8 +329,21 @@ ion-icon{
     background-color: #490d41;      
     color: aliceblue;    
 }
+/* con esto colocamos los elementos hijos directos de la segunda fila en los extremos de la fila 
+como queríamos. */
+.segundaFila {
+    display: flex;
+    justify-content: space-between;
+}
 .img-rrss{
     background-color: #d9dce0;
    }
 
-   
+.cr {
+    background-color: #2c3e50;
+    display:flex;
+    font-size: small;
+    align-self: center;
+    justify-self: flex-start;
+    
+}
