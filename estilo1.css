@@ -134,69 +134,57 @@ cursor:pointer;
     color: #fff;
 }
 
-.contenedor-situacion-parrafos{
-    background-color: #112034;
-    /* display:grid; */
-    margin-block-start: 50%;
-    width: 800px;
-    margin:0 25%;
-    text-align: justify;
-}
-
-.contenedor-parrafos{
-    font-size:small;
+.contenedor  {
     display:grid;
-    grid-template-columns: repeat(3,1fr);   
-    grid-template-rows: repeat(5,1fr);
-    justify-items: center;
-    align-items: center;
-    /* justify-content: center; */
-    /* align-content: center; */
-    grid-template-areas:    "marcador-situacion texto-situacion texto-situacion"                            
-                            "parrafo1           parrafo1        parrafo1"
-                            "parrafo2           parrafo2        parrafo2"
-                            "parrafo3           parrafo3        parrafo3"
-                            "proyect            proyect         cv"   ;
-    
+    grid-template-columns: repeat(7,1fr);   
+    grid-template-rows: repeat(5,1fr);  
+    grid-template-areas: 1;
 }
 
-.marcador-situacion {
-    grid-area:marcador-situacion;
-    background-color:white;
-    /* min-width: 10px; */
-    /* max-width: 100px; */
+.titulo {
+    background-color: pink;
+    grid-area: 1;    
+}
+.pieTitulo {
+    background-color: violet;
+    grid-area: 2; 
+}
+.foto-princ{
+    grid-area: 3;
 }
 
-.texto-situacion {   
-    grid-area: texto-situacion;
+.marcador-situacion{
+    grid-area: 4;   
+    background-color:rgb(105, 95, 95);
+}
+.texto-situacion{
+    grid-area: 5;
+    background-color: rgb(71, 44, 9); 
+}
+.parrafo1{
+    grid-area: 6;
+    background-color: rgb(240, 186, 116); 
 }
 
-.parrafo1 {
-    grid-area: parrafo1;
-}
 .parrafo2 {
-    grid-area: parrafo2;
+    background-color: rgb(138, 189, 212); 
+    grid-area: 7;
 }
 
 .parrafo3 {
-    grid-area: parrafo3;
+    background-color: rgb(48, 161, 127); 
+    grid-area: 8;
 }
 .proyect {
-    grid-area: proyect;
+    background-color: rgb(236, 169, 222); 
+    grid-area: 9;
 }
 .cv{
-    grid-area: cv;   
+    grid-area: 9;   
 }
- .Titulo, .pieTitulo{
-    display:flex;
-    justify-content: center;    
-    margin:15px;
-}
-.foto-centro{    
-    background-color:#112034;
-    text-align: center;
-    
-}
+
+
+
 
 
 
