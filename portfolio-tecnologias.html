@@ -5,48 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
-   <header class="bg-info h-25 ">
-    <!-- cabecera de la página web -->000
+<body class="bg-black">
+   <header id="menu_sup" class="bg-info fixed-top">
+    <!-- cabecera de la página web -->
     <!-- aqui solo vá el menu de navegación fíjo -->
+    <nav class="navbar bg-secondary-subtle">
+        
+        <div class="container-fluid d-flex justify-content-between"  height="20">
+            <div class="col-1 pb-3 bg-light border border-3 border-dark rounded-5 d-flex justify-content-center align-items-center">
+            <img width="40%" height="40%" src="img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg">
+        </div>
+          <a class="navbar-brand" href="#">
+            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap2
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap3
+          </a>
+        </div>
+      </nav>
    </header> 
-   <main class="container bg-danger vh-100 h-50 p-2">
+   <main class="container pt-5 bg-dark vh-auto ">
     <!-- cuerpo de la página web -->
-    <section class="row bg-warning vh-50 d-flex justify-content-center align-items-center">
+    <section class="row p-0 mb-1 opacity-75 bg-gradient vh-100 d-flex justify-content-center align-items-center">
         <!-- aqui van tarjetas grandes con las tecnologias utilizadas.-->
-        <div class="col-8 d-flex justify-content-center align-items-center">
-            <div class=" card  border border-2 border-black rounded-2" style="width: 18rem;">
-            <img src="/img/frontend tecnologias.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Tecnologias Frontend</h5>
-              <p class="card-text">Cuando inicié mis estudios de manera autodidacta, lo primero que aprendí fue HTML, CSS y JavaScript, después descubrí jQuery pero no tardé mucho en aprender a usar React.js, y desde entonces más nunca he realizado proyectos sin esta potente biblioteca de JavaScript, la cual ayuda un montón en el diseño de las interfaces de usuario, escribir el código en JSX es amigable, y junto con el manejo del DOM virtual y los hooks hacen que esta herramienta esté en alta demanda hoy en día. Luego aprendí Next.js y sus maravillosas bondades para generar páginas estáticas, estructura de rutas con "pages", SSR, entre otros, y luego de estudiar TypeScript, trato de escribir todo mi código con ese lenguaje de programación.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><img class="" src="/img/css-3-svgrepo-com.svg">
-                <i class="bi-" style="font-size: 1 rem; color: cornflowerblue;"></i> An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
+       <p class="d-flex justify-content-center fs-3">Tecnologias Frontend</p> 
+        <div class="col-6-lg d-flex justify-content-center align-items-center bg-danger-subtle">
+            <!-- <img class="icon"width=5% height="5%" src="/img/html-5-svgrepo-com.svg"></img> -->
+            <div class="card" style="width: 30rem;">
+                <img src="/img/frontend-portada.webp" class="icon card-img-top icon" width="1%" height="1%" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Aqui hago una exposición de las tecnologias que utilizo en mis desarrollos de páginas Web, lo que no quiere decir que sea una muestra cerrada. Estoy dispuesto a aprender nuevas tecnologias siempre.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/html-5-svgrepo-com.svg"></img>HTML 5</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/css-3-svgrepo-com.svg"></img>CSS 3</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/js-svgrepo-com.svg"></img>Java Script</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/bootstrap-fill-svgrepo-com.svg">Bootstrap </li>
+                        
+                    </ul>
+                </div>
+              </div>
+
         </div>
     </section>
-    <section class="bg-info vh-50 h-50">
-        <!-- aqui puede ir otra tarjeta con las tecnologias utilizadas -->333
+    <section class="row p-0 mt-1 bg-info vh-100 d-flex justify-content-center align-items-center">
+        <!-- aqui puede ir otra tarjeta con las tecnologias utilizadas -->
+        <p class="d-flex justify-content-center fs-3">Tecnologias para Diseño</p> 
+        <div class="col-6-lg d-flex justify-content-center align-items-center bg-danger-subtle">
+            <!-- <img class="icon"width=5% height="5%" src="/img/html-5-svgrepo-com.svg"></img> -->
+            <div class="card" style="width: 30rem;">
+                <img src="/img/Design tools-bro.svg" class="icon card-img-top icon" width="1%" height="1%" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Para el desarrollo web es importante usar otras herramientas, tecnologías, saber hacer deployment, manejar editores de texto nativos de la terminal, usar herramientas para guardar objetos en la nube, para crear y probar las APIs de tus aplicaciones web, para hacer debug de tu código, entre otros. A continuación otras herramientas que también manejo:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/figma-svgrepo-com.svg"></img>Figma</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/calligrakrita-draw-krita-svgrepo-com.svg"></img>Krita</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/capcut-svgrepo-com.svg"></img>CapCut</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/canvas-logo-svgrepo-com.svg">Canvas</li>
+                        <li class="list-group-item"><img class="icon"width=10% height="10%" src="/img/visual-studio-code-logo-svgrepo-com.svg">Visual Studio Code</li>
+                       
+                        
+                    </ul>
+                </div>
+              </div>
+
+        </div>
     </section>
+   
    </main>
-   <footer>
+   
+   <footer class="container vh-auto bg-primary-subtle d-flex justify-content-end align-items-end">
     <!-- pie de la página web -->
 
    </footer>
+   <br>
+<!-- <input href="#" width="5%" class="btn mb-1 bi-menu-button float-none fixed-bottom d-flex justify-content-end align-items-end">Float </input> -->
+<a class="bi-arrow-up btn btn-primary float-end" href="#" role="button"></a>
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
 </body>
 </html>

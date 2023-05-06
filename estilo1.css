@@ -5,7 +5,8 @@
 }
 body{
     font-family: sans-serif;
-    padding: 90px 20px 0;
+    padding: 70px 20px 0;
+    background-color:#004880; 
 }
 .header{
 background-color:  #0769e9;
@@ -14,7 +15,6 @@ position: fixed;
 width: 100%;
 top: 0;
 left: 0;
-
 }
 .nav{
     display: flex;
@@ -23,10 +23,12 @@ left: 0;
     max-width: 992px;
     margin:0,auto;
 }
+
 .nav-link{
     color:white;
     text-decoration: none;   
 }
+
 .logo{
     font-size: 30px;
     font-weight: bold;
@@ -94,7 +96,7 @@ cursor:pointer;
         position: fixed;      
         left: 0;
         top:60px;
-        width: 100%;
+        width:100%;
         padding: 20px 0;
         height: calc(100%-60px);
         overflow-y: auto;
@@ -105,7 +107,7 @@ cursor:pointer;
     }
     
     .nav-menu-item{
-        line-height: 70px;
+        line-height: 50px;
     }
     
    
@@ -124,16 +126,19 @@ cursor:pointer;
 .nav-toggle:focus:not(:focus-visible){
     outline: none;
 }
+.supercontenedor{
+    margin-top:300px;
+    border-top: 100px;
+    border-color: #004880;
+    height: calc(100% + 30%);
+}
+.contenedor2{
+    height: fit-content;
 }
 
-/* Estilo de la parte central de la pantalla de inicio */
-
-.main{
-    margin: 0;
-    background-color: #112034;
-    color: #fff;
 }
 
+<<<<<<< HEAD
 .contenedor  {
     display:grid;
     grid-template-columns: repeat(7,1fr);   
@@ -206,3 +211,214 @@ cursor:pointer;
 .piedepagina{
     background-color:#83c5f7
 }
+=======
+/* Estilo del cuerpo de la pantalla de inicio  un contenedor global, 
+y tres subcontenedores parciales*/
+
+.supercontenedor{
+    /*mirar a ver la posibilidad de hacer un translate vertical 
+    cuando cambia a formato movil*/
+    margin-top: 90px;
+    display:grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: ". c1 ." ". c2 ." ". c3 .";
+}
+
+/* estilo y colocación de la parte superior del cuerpo de la página */
+
+.contenedor1{
+    width: 50%;        
+    background-color: #004880;    
+    grid-area: c1;
+    display:flex;
+    flex-direction: column;
+    /* alineacion del bloque con respecto a su contenedor superior */
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: justify;    
+}
+
+.tituloCab > .Titulo , .tituloCab > .pieTitulo{
+    
+    display:grid;
+    align-items: center;
+}
+
+/* estilo y colocacion de la parte central del cuerpo de la página */
+ .contenedor2{
+    width: 50%;
+    /* border:2px; */
+    background-color: #004880;  
+    grid-area: c2;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% 60%,20%;
+    grid-template-areas:". foto ." ". foto ." "pos1 pos2 pos3";
+    justify-self: center;
+}
+.contenedor2-foto-centro {
+    padding: 1px;
+    border:2px;
+    background-color: #004880;   
+    grid-area: foto;    
+    justify-self: center;
+ } 
+
+.foto-princ{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 15px;   
+}
+
+.contenedor2-solo-situacion{    
+    display:grid;
+    grid-template-areas: "s1 s2";    
+    grid-area: pos2;
+}
+
+.solo-situacion{
+    grid-area: s2;
+    justify-items: left;
+}
+
+.icono, .texto-situacion {
+    display: inline;
+    font-style: oblique;   
+    width: fit-content;
+    height: fit-content;   
+}
+
+/* estilo y colocación de la parte inferior del cuerpo de la página */
+
+.contenedor3{    
+    border:2px;
+    background-color: #004880;    
+    grid-area: c3;
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(4,1fr) ;
+    grid-area: ". p1 ." ". p2 ." ". p3 ." ". btn .";
+    align-items: center;
+    gap: 1px;  
+     /*ancho del contenedor 3 con respecto al supercontenedor, es decir, tiene el 50% de ancho de lo que mide el supercontenedor*/
+    width: 75%;
+    /*centrado del bloque contenedor con respecto a su padre, el supercontenedor*/
+    justify-self: center;
+}
+
+.foto-princ {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 110%;
+    height: 80%;
+    max-height: 100%;
+}
+
+.marco-parrafos{
+    width: 50%;    
+}
+
+ion-icon{   
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+    color:red;
+}
+
+.icono{
+    color:blue;   
+}
+
+/* encuadres de la parte inferior del contenedor3 */
+
+.text{   
+    padding: 5px;
+    color:white;    
+    background-color: #004880;  
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;    
+}
+
+.contenedor-parrafos-situacion{
+    display:flex;
+    background-color: #004880;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#004880;
+    width: 50%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.proyectos{
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+.curriculum{
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+/* comienza el estilo del pie de pagina */
+.piedepagina{ 
+    width: 100%;
+    display: grid;
+    height: fit-content;         
+    background-color:#004880;
+}
+
+.primeraFila{
+    background-color:#004880;
+    justify-self: end;
+    padding:5px;
+}
+
+.segundaFila{   
+    display:flex;      
+    background-color: rgb(175, 145, 134);      
+    justify-content: space-around;
+    width: 100%;   
+}
+
+.returnTop {
+    padding-right: 15px;
+    width: 100%;
+    background-color: #490d41;      
+    color: aliceblue;    
+}
+/* con esto colocamos los elementos hijos directos de la segunda fila en los extremos de la fila 
+como queríamos. */
+.segundaFila {
+    display: flex;
+    justify-content: space-between;
+}
+.img-rrss{
+    background-color: #d9dce0;
+   }
+
+.cr {
+    background-color: #2c3e50;
+    display:flex;
+    font-size: small;
+    align-self: center;
+    justify-self: flex-start;
+    
+}
+>>>>>>> 9e386c1d24bf6fcc79b740fe4b4cee2b5eceda29
