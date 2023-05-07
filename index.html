@@ -1,14 +1,14 @@
 <!-- https://portfolio-juancgalueweb.vercel.app/ -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monserrat">
-    <link rel='stylesheet' type='text/css' media='screen' href='estilo1.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='estilo1.css'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Aqui va la linea de codigo de la parte del css de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,67 +17,46 @@
 </head>
 <!-- parte principal del código, que permite dividir en tres grandes zonas, 
     llamadas header,main y footer -->
-<body>
+<body class="container vh-100  d-flex justify-content-center align-items-center bg-black">
     <!-- cabecera de la página donde está el menú de navegación -->
-    <header class="container">
-        <!-- barra de navegacion copìada por entero de bootstrap y luego adaptada a mis necesidades -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <div class="container-fluid">
-                
-              <a class="navbar-brand" href="#">
-                <img class=" bg-success" width="25%" height="25%" src="/img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg">
+    
+   
+    <main class="container vh-100 bg-secondary">
+        <nav class="navbar navbar-light bg-success">
+            <div class="container">
+              <a class="bg-danger h-25 w-25 d-flex justify-content-center">
+                <img width="25%" height="25%" src="/img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg" >
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Enlace</a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                    </ul>
-                  </li> -->
-                  <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Deshabilitado</a>
-                  </li> -->
-                </ul>
-                <!-- <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form> -->
-              </div>
+                <a class="navbar-brand" href="#">
+
+                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="24">
+              </a>
             </div>
           </nav>
-    </header>
-    <main class="container vh-100">
-    <div class="row h-50">
-        <h1 class="Titulo row-cols-6 d-flex justify-content-center align-items-center">FRANCISCO JAVIER MENAYO RAMOS</h1>
-        <h3 class="pieTitulo row-cols-6 d-flex justify-content-center align-items-center bg-danger-submit rounded-5">Tecnico Superior Instalaciones Electrotécnicas</h3>
+    <div class="row">
+        <h1 class="row bg-primary-subtle d-flex justify-content-center align-items-center">
+            FRANCISCO JAVIER MENAYO RAMOS
+        </h1>
+        <h3 class="row d-flex justify-content-center align-items-center bg-danger-submit rounded-5">
+            Tecnico Superior Instalaciones Electrotécnicas
+        </h3>
     </div> 
 
-    <div class="fondo-centro">
-        <div class="foto-centro">
-            <img class="foto-princ" width="20%" height="30%" src="/img/Imagen de WhatsApp 2023-03-24 a las 12.11.25.jpg" alt="foto principal" class="foto-pers1">
-        </div>    
-    </div>
-        <div class="contenedor-situacion-parrafos">
+    <section class="col-12 flex-column bg-warning bg-opacity-50  d-flex justify-content-center align-items-center">
+        <div class="col-12 w-50 d-flex  justify-content-center bg-danger">
+            <img  width="40%" height="40%" src="/img/Imagen de WhatsApp 2023-03-24 a las 12.11.25.jpg" alt="foto principal" >
+        </div>
+        <div class="col-6 h-25 d-flex justify-content-center align-items-center bg-opacity-50 bg-danger">
+            <img class="img-fluid h-25 w bg-light" src="img/location_map_pin_mark_icon_148685.svg" width="3%" height="3%" alt="imagen de marcador de mapa" class="loc">
+            <h6 class=" bg-primary">
+                Montijo(BADAJOZ)
+            </h6> 
+        </div>
+    </section>            
+    
+        <div class="contenedor-situacion-parrafos container w-50">
             <div class="contenedor-parrafos">
-                <img class="marcador-situacion" src="img/location_map_pin_mark_icon_148685.svg" width="3%" height="4%" alt="imagen de marcador de mapa" class="loc">
-                <p class="texto-situacion">
-                    Montijo(BADAJOZ)
-                </p>
+                
                 <p class="text parrafo1">
                     Soy un Electricista con amplia experiencia en producción y mantenimiento industrial de instalaciones criogénicas y de alta presión. 
                     Tras completar una etapa laboral de 20 años en una misma empresa, me estoy reciclando como Desarrollador Web.
@@ -99,10 +78,10 @@
     <!-- pie de página organizado en dos filas. La fila superior aloja el botón que hace regresar 
     a la parte superior de la página.
     La fila inferior aloja un texto en la esquina izquierda, y los enlaces a las redes sociales en la esquina derecha. -->
-    <footer class="piedepagina">
-        <section class="primeraFila">
+     <!-- <footer class="container bg-info piedepagina"> -->
+    <!--    <section class="row primeraFila">
 
-            <div class="marco-boton">
+            <div class=" col-sm marco-boton">
                 <button class="returnTop" href="titulo">
                     Regresar Arriba
                 </button>
@@ -110,21 +89,22 @@
 
         </section>
 
-        <section class="segundaFila">
+        <section class="row segundaFila"> -->
             <!-- Este texto va a la izquierda de la fila. -->
-            <span class="cr">
+            <!-- <span class="col-sm  cr">
                 <p class="cr-text">
                     @2023 FJMR
                 </p>
-            </span>
+            </span> -->
             <!-- Estos enlaces van a la derecha de esta misma fila. -->
-            <div class="rrss">
+            <!-- <div class="rrss">
                 <img class="img-rrss gh" href="#" src="img/logo-github.svg" width="25px" height="25px"  alt="logo-github">
                 <img class="img-rrss li" href="#" src="img/logo-linkedin.svg" width="25px" height="25px" alt="logo-linkedin" >
                 <img class="img-rrss dc" href="#" src="img/logo-discord.svg" width="25px" height="25px" alt="logo-discord" > 
                 <img class="img-rrss em" href="#" src="img/mail-outline.svg" width="25px" height="25px" alt="logo-e-mail" > 
                 
-            </div>
+            </div> -->
+
         </section> 
     
     </footer>
