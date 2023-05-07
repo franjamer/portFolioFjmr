@@ -16,6 +16,11 @@
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- trozo de codigo css para realizar el movimiento de texto necesario -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
     <style>
         @keyframes marquee {
           0% { transform: translateX(0%); }
@@ -31,47 +36,61 @@
           white-space: nowrap;
           animation: marquee 5s linear infinite;
         }
+         /* Personalización para el icono del menú */
+      .navbar-toggler-icon {
+        background-color: #000; /* Color del icono del menú */
+      }
       </style>
 </head>
 <!-- parte principal del código, que permite dividir en tres grandes zonas, 
     llamadas header,main y footer -->
 <body class="bg-black m-0 p-0">
     <!-- cabecera de la página donde está el menú de navegación -->
-    <section class="row w-100 m-0 p-0" height="10%">
-
+    <section class="row d-flex justify-content-center m-0 p-0" >
+<!-- inicio de codigo para nav bar de chat gpt -->
+<nav class=" navbar navbar-expand-md navbar-success bg-success bg-gradient ">
+    <a class="navbar-brand" href="#" >
+        <img class="text-white" width="30" height="30" src="/img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg" >
+    </a>
+    <!-- Botón del menú responsive -->
+    <button class="navbar-toggler bi bi-list bg-transparent bg-gradient" src="img/list.svg" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon bg-success" src="img/list.svg"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"  viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    </button>
     
-    <nav class="navbar  navbar-light bg-success rounded-3 fs-3">
-            <div class="container-fluid ">
-              <a class="col-1 pb-2 d-flex justify-content-center align-items-center text-primary">
-                <img class="text-white" width="30" height="30" src="/img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg" >
-              </a>
-                <a class="navbar-brand text-white fs-6 " href="#">
-                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="30">Tecnologias
-              </a>
-              <a class="navbar-brand text-white fs-6" href="#">
-                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="30">Proyectos
-              </a>
-              <a class="navbar-brand text-white fs-6" href="#">
-                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="30">Diplomas
-              </a>
-              <a class="navbar-brand text-white fs-6" href="#">
-                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="30">Código
-              </a>
-              <a class="navbar-brand text-white fs-6" href="#">
-                <img src="/img/bootstrap-fill-svgrepo-com.svg" alt="" width="30" height="30">CV
-              </a>
-            </div>
-          </nav>
+    <div class="collapse navbar-collapse bg-success" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto  text-success w-25 d-flex justify-content-center rounded-3 fs-6">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Tecnologías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Proyectos</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="#">Diplomas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Código</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">CV</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!-- fin de codigo de nav bar de chat gpt -->
+    
     </section>
     <main class="container  bg-black bg-opacity-75">
         
     <div class="row d-flex justify-content-center align-items-center bg-black bg-opacity-50 bg-gradient">
         
-        <h1 class="row w-auto bg-primary-subtle bg-black d-flex justify-content-center align-items-center text-success ">
+        <h1 class="row w-auto bg-primary-subtle  d-flex justify-content-center align-items-center text-success ">
 
             FRANCISCO JAVIER MENAYO RAMOS
         </h1>
-        <h3 class="row w-auto bg-black d-flex justify-content-center align-items-center bg-danger-submit rounded-5 text-info rounded-5">
+        <h3 class="row w-auto d-flex justify-content-center align-items-center bg-danger-submit rounded-5 text-info rounded-5">
             <!-- codigo del carrusel de texto -->
         <div class="marquee-container">
             <span class="marquee-text">Tecnico Superior en Instalaciones Electrotécnicas</span>
@@ -80,8 +99,8 @@
     </div> 
 
     <section class="col-12 flex-column bg-black bg-opacity-50  d-flex justify-content-center align-items-center">
-        <div class="col-md-12 w-25 h-50 d-flex  justify-content-center bg-dark">
-            <img  class=" img-fluid"  src="/img/Imagen de WhatsApp 2023-03-24 a las 12.11.25.jpg" alt="foto principal" >
+        <div class="col-md-12 w-25 h-50 d-flex  justify-content-center bg-black">
+            <img  class=" img-fluid p-3 border border-3 border-secondary  "  src="/img/Imagen de WhatsApp 2023-03-24 a las 12.11.25.jpg" alt="foto principal" >
         </div>
         <div class="col-6 h-25 d-flex justify-content-start align-items-center bg-opacity-50 text-danger">
             <img class="img h-25 p-0 m-0 " src="img/marcador_mapa.png" width="3%" height="3%" alt="imagen de marcador de mapa" class="loc">
