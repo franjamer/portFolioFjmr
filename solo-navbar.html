@@ -25,18 +25,43 @@
 
           <!-- elementos del menu colapsable -->
           <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav m-auto">
+            <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Precios</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Servicios</a>
+                    <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item" href="">Renta</a></li>
+                        <li><a class="dropdown-item" href="">Equipos</Em></a></li>
+                        <li><a class="dropdown-item" href="">Networking</a></li>
+                    </ul>
                 </li>
             </ul>
+            <hr class="text-white-50">
+            <!-- enlaces redes -->
 
+            <ul class="navbar-nav flex-row text-light">
+                <li class="nav-item col-3 col-md-auto p-3">
+                    <i class="bi bi-twitter"></i>
+                    <small>Twitter</small>
+                </li>
+                <li class="nav-item col-3 col-md-auto p-3">
+                    <i class="bi bi-github"></i>
+                    <small>Github</small>
+                </li>
+                <li class="nav-item col-3 col-md-auto p-3">
+                    <i class="bi bi-whatsapp"></i>
+                    <small>Whatsapp</small>
+                </li>
+                <li class="nav-item col-3 col-md-auto p-3">
+                    <i class="bi bi-facebook"></i>
+                    <small>Facebook</small>
+                </li>
+            </ul>
           </div>
     </div>
 </nav>
