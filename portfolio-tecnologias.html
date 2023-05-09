@@ -15,26 +15,67 @@
    <header id="menu_sup" class="bg-info fixed-top">
     <!-- cabecera de la página web -->
     <!-- aqui solo vá el menu de navegación fíjo -->
-    <nav class="navbar bg-secondary-subtle">
-        
-        <div class="container-fluid d-flex justify-content-between"  height="20">
-            <div class="col-1 pb-3 bg-light border border-3 border-dark rounded-5 d-flex justify-content-center align-items-center">
-            <img width="40%" height="40%" src="img/Black and Grey Clean Modern Minimalist Creative Technology Logo.svg">
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+          <!-- icono -->
           <a class="navbar-brand" href="#">
-            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
+              <i class="bi bi-flower1"></i>
+              <span class="text-warning">Intelio</span>
           </a>
-          <a class="navbar-brand" href="#">
-            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap2
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="img/bootstrap-fill-svgrepo-com.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap3
-          </a>
-        </div>
-      </nav>
+          <!-- boton del menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> 
+          </button>
+  
+  
+            <!-- elementos del menu colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Precios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Servicios</a>
+                      <ul class="dropdown-menu bg-secondary">
+                          <li><a class="dropdown-item" href="">Renta</a></li>
+                          <li><a class="dropdown-item" href="">Equipos</Em></a></li>
+                          <li><a class="dropdown-item" href="">Networking</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <hr class="text-white-50">
+              <!-- enlaces redes -->
+  
+              <ul class="navbar-nav flex-row text-light">
+                  <li class="nav-item col-3 col-md-auto p-3">
+                      <i class="bi bi-twitter"></i>
+                      <small class="d-md-none ms-2">Twitter</small>
+                  </li>
+                  <li class="nav-item col-3 col-md-auto p-3">
+                      <i class="bi bi-github"></i>
+                      <small class="d-md-none ms-2">Github</small>
+                  </li>
+                  <li class="nav-item col-3 col-md-auto p-3">
+                      <i class="bi bi-whatsapp"></i>
+                      <small class="d-md-none ms-2">Whatsapp</small>
+                  </li>
+                  <li class="nav-item col-3 col-md-auto p-3">
+                      <i class="bi bi-facebook"></i>
+                      <small class="d-md-none ms-2">Facebook</small>
+                  </li>
+              </ul>
+              <!-- boton de informacion -->
+              <form class="d-flex"></form>
+                  <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">
+                      Información
+                  </button>
+              
+          </div>
+      </div>
+  </nav>
    </header> 
    <main class="container pt-5 bg-dark vh-auto ">
     <!-- cuerpo de la página web -->
